@@ -28,8 +28,6 @@ def main():
     print(title)
     print(len(title) * "=")
     print("Timestamp:", datetime.datetime.now(), end=2*"\n", flush=True)
-    print("N.B. Unspecified units imply atomic units (hartree, bohr, etc.)", 
-          end=2*"\n", flush=True)
 
 
     #-------------------- 
@@ -38,6 +36,9 @@ def main():
     # N.B., suffixes are used to indicate values _not_ in atomic units.
 
     args = parser.parse_args()
+
+    print("N.B. Unspecified units imply atomic units (hartree, bohr, etc.)", 
+          end=2*"\n", flush=True)
 
     pmass_Da = args.pmass  # particle's mass in daltons
     pmass = pmass_Da * dalton2me    # particles mass in electron mass
