@@ -23,7 +23,7 @@ well.
 * scipy 1.2.1
 
 
-## Setting up the program
+## Program setup
 
 N.B. The instructions below assume that you are at the repository's base
 directory.
@@ -41,6 +41,11 @@ To do so, edit the `./bin/qtp.sh` file as follows:
 If you specify the variables above using full paths, you should be able to
 copy the `./bin/qtp.sh` file to anywhere in your system and still be able
 to run the program.
+
+Alternatively, you can use the python interepreter that ships with AMS
+(https://www.scm.com) if you have AMS installed in your system. 
+This is done by using `bin/amsqtp.sh` instead of `bin/qtp.sh`. 
+In this case, just set the `scrpath` variable accordingly. 
 
 
 ## Running the program
